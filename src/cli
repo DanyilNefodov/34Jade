@@ -1,0 +1,14 @@
+#!/bin/bash
+
+export CLASSPATH=/home/danil/my_projects/JADE-bin/lib/jade.jar:/home/danil/my_projects/JADE-src/lib/commons-codec/commons-codec-1.3.jar:.
+
+javac -cp $CLASSPATH com/complany/AgentPosition.java
+javac -cp $CLASSPATH com/complany/NavigatorAgent.java
+javac -cp $CLASSPATH com/complany/Room.java
+javac -cp $CLASSPATH com/complany/SpeleologistAgent.java
+javac -cp $CLASSPATH com/complany/WumpusCave.java
+javac -cp $CLASSPATH com/complany/WumpusPercept.java
+javac -cp $CLASSPATH com/complany/WumpusWorldAgent.java
+
+
+java -cp $CLASSPATH jade.Boot -gui
